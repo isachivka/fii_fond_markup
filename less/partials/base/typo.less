@@ -1,0 +1,46 @@
+@b_color: #777;
+@a_color: #22232c;
+@h_color: red;
+
+
+body {
+  font: 14px/1.571 'Roboto', sans-serif;
+  font-weight: 300;
+  color: @b_color;
+  small {
+    font-size: 12px;
+  }
+}
+.slab() {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+}
+.typo_hl {
+  font-size: 36px;
+  line-height: 1.33;
+  .slab();
+  color: @a_color;
+}
+.typo_sh {
+  font-size: 24px;
+  line-height: 1.33;
+  .slab();
+  color: @a_color;
+}
+.typo_mh {
+  font-size: 18px;
+}
+.typo_t {
+  font-weight: normal;
+  color: @a_color;
+}
+a {
+  color: @a_color;
+  text-decoration: none;
+  &:hover {
+    color: @h_color;
+  }
+}
+p {
+  margin: 0 0 14px;
+}
