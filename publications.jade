@@ -1,0 +1,19 @@
+extend layout/base
+
+block content
+  include partials/header
+  .b_promo.m_little(style='background-image: url(/images/promo_1.png)')
+    .b_layout
+      .typo_sh.vam публикации
+      .vam_helper
+  //ul.b_sort.b_layout
+  //  li
+  //    a(href='#') Отчёты о мероприятиях
+  //  li
+  //    a(href='#') Тендеры
+  //  li
+  //    a.active(href='#') Все новости
+  .b_newsbox
+    include partials/news/news
+    include partials/news/news
+  include partials/footer

@@ -4,12 +4,6 @@
 @import 'partials/base/layout';
 @import 'partials/base/typo';
 
-.b_layout {
-  margin: 0 auto;
-  width: 1020px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 header {
   padding-top: 35px;
@@ -23,6 +17,12 @@ footer {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.b_layout {
+  margin: 0 auto;
+  width: 1020px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .b_logo {
   img {
     display: block;
@@ -45,6 +45,7 @@ footer {
   &.m_little .b_layout { height: 100px; }
   .typo_hl, .typo_sh {
     color: #fff;
+    text-transform: uppercase;
   }
 }
 .b_texts {
@@ -89,6 +90,7 @@ footer {
     color: #fff;
     padding: 0 40px;
     text-align: center;
+    text-transform: uppercase;
   }
   &:hover .title {
     color: @h_color;
@@ -100,10 +102,16 @@ footer {
     margin: 0 20px 0 0;
     &:last-child {margin: 0;}
   }
+  .b_layout:last-child {
+    .b_news {
+      margin: 0;
+    }
+  }
 }
 .b_news {
   position: relative;
   width: 320px;
+  margin: 0 0 100px;
   img {
     display: block;
     margin: 0 0 25px;
@@ -111,6 +119,84 @@ footer {
   &:hover {
     .typo_t {
       color: @h_color;
+    }
+  }
+}
+.b_sort {
+  margin-top: -90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  li {
+    float: right;
+    margin: 0 0 0 30px;
+    a {
+      color: #BABABA;
+      &.active {color: @a_color;}
+    }
+  }
+}
+.b_news_page {
+  aside {
+    .title {
+      .slab();
+      text-transform: uppercase;
+      color: @a_color;
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+    ul {
+      margin: 0 0 30px;
+      li {
+        margin: 0 0 14px;
+        line-height: 1.3;
+        a {
+          color: @b_color;
+          &:hover {
+            color: @h_color;
+          }
+        }
+      }
+    }
+  }
+  section {
+    blockquote {
+      padding: 10px 0 10px 30px;
+      margin: 0 0 14px;
+      display: block;
+      font-size: 24px;
+      border: 4px solid #505050;
+      border-width: 0 0 0 4px;
+      line-height: 1;
+      color: @a_color;
+      cite {
+        display: block;
+        margin: 15px 0 0 0;
+        font-size: 14px;
+        color: @b_color;
+        font-style: italic;
+      }
+    }
+    img {
+      display: block;
+      margin: 0 0 30px;
+      max-width: 100%;
+    }
+    .title {
+      margin: 0 0 20px;
+      text-transform: uppercase;
+    }
+    p {
+      line-height: 28px;
+    }
+    .stats {
+      span {
+        display: inline-block;
+        margin: 0 100px 0 0;
+      }
+      em {
+        font-style: italic;
+      }
     }
   }
 }
