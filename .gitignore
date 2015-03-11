@@ -1,4 +1,4 @@
-*.html
-*.css
-coffee/*.js
+#*.html
+#*.css
+#coffee/*.js
 config.codekit
