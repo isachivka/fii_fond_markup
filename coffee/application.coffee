@@ -3,11 +3,10 @@ contacts_map = new GMaps(
   lat: -12.043333,
   lng: -77.028333
 )
-contacts_map.addMarker
-  lat: -12.042
+contacts_map.drawOverlay
+  lat: -12.041
   lng: -77.028333
-  title: 'Here'
-  infoWindow: content: '<p>Here</p>'
+  content: '<div class="b_marker"></div>'
 
 popups = () ->
   dp = '[data-role="popup"]'

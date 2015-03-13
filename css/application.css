@@ -1270,6 +1270,7 @@ footer {
   margin: 0 0 0 40px;
   font-family: 'Roboto Slab';
   font-weight: normal;
+  font-weight: 300;
 }
 .b_main_menu li a.active {
   color: #faaf31;
@@ -1555,6 +1556,12 @@ footer {
   font-size: 16px;
   line-height: 32px;
   margin: 0;
+}
+.b_marker {
+  height: 46px;
+  width: 31px;
+  background: url(../images/marker.png) no-repeat;
+  display: block;
 }
 .b_links {
   margin: 0 0 -90px 0;
