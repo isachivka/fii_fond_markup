@@ -1,0 +1,73 @@
+extend layout/base
+
+block content
+  include partials/header
+  .b_promo.m_little(style='background-image: url(images/promo_1.png)')
+    .b_layout
+      .typo_sh.vam президиум и учредители фонда
+      .vam_helper
+  .b_main_member
+    .b_layout
+      img(src='images/main_member.png')
+      .name АРтемов алексей валерьевич
+      .role Исполнительный директор
+  .b_layout
+    .b_members
+      .title.typo_sh Члены президиума
+      .b_member
+        .pure-g
+          aside.pure-u-6-24
+            img(src='images/member_1.png')
+            .name бочаров олег евгеньевич
+            .role Руководитель Департамента науки, промышленной политики и предпринимательства города Москвы
+          .pure-u-1-24
+          section.pure-u-17-24
+            p text from png
+      .b_member
+        .pure-g
+          aside.pure-u-6-24
+            img(src='images/member_2.png')
+            .name кузнецов артем владиславович
+            .role Президент Группы "Гута" с мая 2003 г., генеральный директор управляющей компании "Объединенные кондитеры" с декабря 2004 г.
+          .pure-u-1-24
+          section.pure-u-17-24
+            p text from png
+      .b_member
+        .pure-g
+          aside.pure-u-6-24
+            img(src='images/member_3.png')
+            .name богза александр&nbsp;валерьевич
+            .role Руководитель Департамента науки, промышленной политики и предпринимательства города Москвы
+          .pure-u-1-24
+          section.pure-u-17-24
+            p text from png
+      .b_member
+        .pure-g
+          aside.pure-u-6-24
+            img(src='images/member_4.png')
+            .name Князев дмитрий александрович
+            .role Руководитель Департамента науки, промышленной политики и предпринимательства города Москвы
+          .pure-u-1-24
+          section.pure-u-17-24
+            p text from png
+  .b_layout
+    .b_founders
+      .title.typo_sh Учредители фонда
+      .pure-g
+        .pure-u-3-24
+        .pure-u-9-24
+          .b_founder
+            a.overlay(href='http://www.ipras.ru', target="_blank")
+            img(src='images/u_1.png')
+            .name институт психологии ран
+            .link www.ipras.ru
+            p text from png
+        .pure-u-9-24
+          .b_founder
+            a.overlay(href='http://www.superjob.ru', target="_blank")
+            img(src='images/u_2.png')
+            .name Суперджоб
+            .link www.superjob.ru
+            p text from png
+        .pure-u-3-24
+  include partials/footer

@@ -1,0 +1,26 @@
+extend layout/base
+
+block content
+  include partials/header
+  .b_contacts
+    #map
+    .text
+      .title КОНТАКТЫ
+      hr
+      p 123242, г. Москва
+      p ул. Дружинниковская, д.30
+      p Email: email@yourdomain.com
+      p Тел: +8 (0) 101 0000 888
+      p Факс: +8 (0) 800 0000 008
+  ul.b_links
+    li
+      a(href='#', data-role="popup_open", data-target='#req') <i class="doc"></i>РЕКВИЗИТЫ КОМПАНИИ
+    li
+      a(href='#') <i class="doc"></i>ДОГОВОР УЧАСТИЯ
+  .b_popup_wrapper#req(data-role="popup")
+    .b_popup(data-role="popup_window")
+      p
+        i.doc
+      .title РЕКВИЗИТЫ КОМПАНИИ
+      p ОГРН 1127799004112,<br>ИНН 7703479598,<br>КПП770301001,<br>р/с: 40703810800000003992  в ВТБ 24 (ЗАО) г. Москва,<br>БИК: 044525716,<br>к/с: 30101810100000000716
+  include partials/footer
