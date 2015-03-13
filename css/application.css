@@ -1263,11 +1263,11 @@ footer {
 }
 .b_main_menu {
   float: right;
-  line-height: 74px;
+  line-height: 37px;
 }
 .b_main_menu li {
   float: left;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 40px;
   font-family: 'Roboto Slab';
   font-weight: normal;
 }
@@ -1631,6 +1631,9 @@ footer {
 .b_members {
   padding: 55px 0 0;
 }
+.b_members.m_pad {
+  padding: 0;
+}
 .b_members .title {
   text-align: center;
   text-transform: uppercase;
@@ -1696,6 +1699,26 @@ footer {
   color: #fff;
   margin: 0 0 30px;
 }
+.b_project_1 p,
+.b_project_2 p {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.b_project_1 a.button,
+.b_project_2 a.button {
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 48px;
+}
+.b_project_1 a.button:hover,
+.b_project_2 a.button:hover {
+  border-color: #faaf31;
+  color: #faaf31;
+}
 .b_project_1 section,
 .b_project_2 section {
   height: 750px;
@@ -1737,6 +1760,10 @@ footer {
   bottom: 0;
   left: 50%;
 }
+.b_project_1 section.slide_3 p,
+.b_project_2 section.slide_3 p {
+  margin: 0;
+}
 .b_project_1 section.slide_3 .vam,
 .b_project_2 section.slide_3 .vam {
   width: 350px;
@@ -1769,7 +1796,7 @@ footer {
 }
 .b_project_1 section.slide_4 p,
 .b_project_2 section.slide_4 p {
-  margin: 0 0 30px;
+  margin: 0 140px 30px;
 }
 .b_project_1 section.slide_4 p:last-child,
 .b_project_2 section.slide_4 p:last-child {
@@ -1780,25 +1807,96 @@ footer {
   padding-bottom: 445px;
   height: 800px;
 }
-.b_project_1 section.slide_4 a.button,
-.b_project_2 section.slide_4 a.button {
-  border: 1px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  height: 50px;
-  padding: 0 30px;
-  display: inline-block;
-  line-height: 48px;
-}
-.b_project_1 section.slide_4 a.button:hover,
-.b_project_2 section.slide_4 a.button:hover {
-  border-color: #faaf31;
-  color: #faaf31;
-}
 .b_project_1 section.slide_4 img,
 .b_project_2 section.slide_4 img {
   position: absolute;
   bottom: 0;
   left: 50%;
   margin: 0 0 0 -625px;
+}
+.b_project_1 section.slide_5,
+.b_project_2 section.slide_5 {
+  height: auto;
+}
+.b_project_1 section.slide_5 .b_layout,
+.b_project_2 section.slide_5 .b_layout {
+  height: auto;
+}
+.b_project_1 section.slide_5 .title,
+.b_project_2 section.slide_5 .title {
+  text-align: center;
+  color: #22232c;
+}
+.b_project_1 section.slide_5 .text,
+.b_project_2 section.slide_5 .text {
+  padding: 100px 0 200px;
+}
+.b_project_1 section.slide_5 .steps,
+.b_project_2 section.slide_5 .steps {
+  padding: 0 0 100px;
+}
+.b_project_1 section.slide_5 .step:first-child,
+.b_project_2 section.slide_5 .step:first-child {
+  margin-top: -35px;
+}
+.b_project_1 section.slide_5 .step .label,
+.b_project_2 section.slide_5 .step .label {
+  font-family: 'Roboto Slab';
+  font-weight: normal;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #22232c;
+  margin: 0 0 20px;
+}
+.b_project_1 section.slide_5 .step .label em,
+.b_project_2 section.slide_5 .step .label em {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 100;
+}
+.b_project_1 section.slide_5 .step p,
+.b_project_2 section.slide_5 .step p {
+  margin-left: 0;
+  margin-right: 0;
+}
+.b_project_1 section.slide_5 .pure-u-4-24,
+.b_project_2 section.slide_5 .pure-u-4-24 {
+  background: url(../images/line.png) repeat-y top center;
+  height: 720px;
+}
+.b_project_1 section.slide_5 .pure-u-4-24 i.round,
+.b_project_2 section.slide_5 .pure-u-4-24 i.round {
+  display: block;
+  margin: 0 auto;
+  height: 22px;
+  width: 22px;
+  background: url(../images/round.png) no-repeat;
+}
+.b_project_1 section.slide_6,
+.b_project_2 section.slide_6,
+.b_project_1 section.slide_7,
+.b_project_2 section.slide_7 {
+  background: #ffd585;
+  color: #22232c;
+}
+.b_project_1 section.slide_6 .title,
+.b_project_2 section.slide_6 .title,
+.b_project_1 section.slide_7 .title,
+.b_project_2 section.slide_7 .title {
+  text-align: center;
+  color: #22232c;
+}
+.b_project_1 section.slide_7,
+.b_project_2 section.slide_7 {
+  background: #3f3f3f;
+  color: #fff;
+  margin: 0 0 -90px;
+}
+.b_project_1 section.slide_7 p.center,
+.b_project_2 section.slide_7 p.center {
+  margin-top: 50px;
+}
+.b_project_1 section.slide_7 .title,
+.b_project_2 section.slide_7 .title {
+  color: #fff;
 }
